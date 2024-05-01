@@ -18,7 +18,7 @@ cache = MemoryCache()
 from vanna.remote import VannaDefault
 vn = VannaDefault(model=os.environ['VANNA_MODEL'], api_key=os.environ['VANNA_API_KEY'])
 
-vn.connect_to_sqlite('')
+vn.connect_to_sqlite('academic.sqlite')
 
 # NO NEED TO CHANGE ANYTHING BELOW THIS LINE
 def requires_cache(fields):
